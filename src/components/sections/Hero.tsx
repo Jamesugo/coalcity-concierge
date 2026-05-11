@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ChevronRight, Play } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import Button from "@/components/ui/Button";
 
 export default function Hero() {
@@ -58,16 +58,12 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="flex flex-wrap items-center gap-4"
+            className="flex items-center"
           >
-            <Button variant="gold" size="lg" className="group">
+            {/* <Button variant="gold" size="lg" className="group px-10">
               Book Your Service
               <ChevronRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button variant="outline" size="lg" className="group">
-              <Play className="mr-2 w-4 h-4 fill-white group-hover:fill-gold transition-colors" />
-              Watch Experience
-            </Button>
+            </Button> */}
           </motion.div>
         </div>
       </div>
