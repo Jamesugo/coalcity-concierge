@@ -4,8 +4,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "secondary" | "outline" | "ghost" | "gold";
+interface ButtonProps extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "onAnimationStart" | "onDrag" | "onDragStart" | "onDragEnd" | "onTransitionEnd"> {
+  variant?: "primary" | "secondary" | "outline" | "gold" | "ghost";
   size?: "sm" | "md" | "lg";
   children: React.ReactNode;
 }
